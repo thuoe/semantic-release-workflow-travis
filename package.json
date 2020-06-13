@@ -1,0 +1,25 @@
+{
+  "name": "@thuoe/semantic-release-workflow-travis",
+  "version": "1.0.0",
+  "description": "Semantic release process using Travis CI",
+  "homepage": "https://github.com/thuoe/semantic-release-workflow-travis#readme",
+  "bugs": {
+    "url": "https://github.com/thuoe/semantic-release-workflow-travis/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thuoe/semantic-release-workflow-travis.git"
+  },
+  "license": "MIT",
+  "author": "thuoeddie@hotmail.co.uk",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

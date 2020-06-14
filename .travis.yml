@@ -3,8 +3,11 @@ node_js:
   - 12
 jobs:
   include: 
-    - stage: Tests
+    - stage: Unit Tests
       install:
         - travis_retry npm install
       script: 
         - npm run test
+    - stage: Dry Release
+      script:
+        - npm run release:dry

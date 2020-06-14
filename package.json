@@ -14,8 +14,9 @@
   "author": "thuoeddie@hotmail.co.uk",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release",
+    "release:dry": "semantic-release --dry-run",
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^26.0.1",

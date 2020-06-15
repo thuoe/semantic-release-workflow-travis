@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 12
+jobs:
+  include: 
+    - stage: Unit Tests
+      install:
+        - travis_retry npm install
+      script: 
+        - npm run test
+    - stage: Release
+      script: skip   # usually you do not want to rerun any tests
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run release
+        on:
+          branch: master

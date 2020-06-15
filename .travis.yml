@@ -16,6 +16,6 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - npm run release
+          - npm run release:dry
         on:
           branch: master

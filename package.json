@@ -15,7 +15,6 @@
   "main": "index.js",
   "scripts": {
     "release": "semantic-release",
-    "release:dry": "semantic-release --dry-run",
     "test": "jest"
   },
   "devDependencies": {

@@ -8,14 +8,12 @@ jobs:
         - travis_retry npm install
       script: 
         - npm run test
-    - stage: Dry Release
-      script:
-        - npm run release:dry
     - stage: Release
+      script: skip   # usually you do not want to rerun any tests
       deploy:
         provider: script
         skip_cleanup: true
         script:
-          - npm run release:dry
+          - npm run release
         on:
           branch: master

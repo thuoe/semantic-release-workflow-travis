@@ -1,0 +1,8 @@
+- stage: Unit Tests
+  install:
+    - travis_retry npm install
+  script: 
+    - npm run test
+- stage: Dry Release
+  script:
+    - npm run release:dry

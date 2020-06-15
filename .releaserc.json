@@ -1,4 +1,3 @@
 {
-    "branches": ["master", "release-process"],
     "tagFormat": "${version}"
 }
